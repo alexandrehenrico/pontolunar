@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto Lunar | Rock Band</title>
+
+    <!-- Pré-conexão com Google Fonts para performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Raleway:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero" id="home">
+        <!-- 
+            [INSTRUÇÃO PARA O USUÁRIO]
+            Substitua o 'src' abaixo pelo caminho do seu vídeo de background.
+            Recomendado: video.mp4 (1920x1080)
+        -->
+        <video class="hero-video" autoplay muted loop playsinline poster="assets/poster-placeholder.jpg">
+            <source src="assets/video_placeholder.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+
+        <!-- Efeito de Overlay e Granulação -->
+        <div class="video-overlay"></div>
+        <div class="grain-overlay"></div>
+
+        <div class="hero-content">
+            <!-- 
+                [INSTRUÇÃO PARA O USUÁRIO]
+                A logo deve estar na mesma pasta ou ajuste o src.
+                Já posicionamos a logo.png que você enviou.
+            -->
+            <img src="logo.png" alt="Ponto Lunar Logo" class="hero-logo animate-enter">
+
+            <a href="https://open.spotify.com/intl-pt/artist/7gdwiLnXcDvFW7EUMNbNbL" target="_blank"
+                class="cta-button animate-enter delay-1">
+                OUÇA NO SPOTIFY
+            </a>
+        </div>
+
+        <div class="scroll-indicator animate-enter delay-2">
+            <span>&#8595;</span>
+        </div>
+    </header>
+
+    <!-- MÚSICA SECTION -->
+    <section class="music scroll-animate" id="musica">
+        <div class="container">
+            <h2 class="section-title">Último Lançamento</h2>
+            <div class="spotify-wrapper">
+                <!-- Embed do Spotify -->
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/artist/7gdwiLnXcDvFW7EUMNbNbL?utm_source=generator&theme=0"
+                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE SECTION -->
+    <section class="about scroll-animate" id="sobre">
+        <div class="container small-container">
+            <h2 class="section-title">A Banda</h2>
+            <p class="about-text">
+                Nascida da energia crua e da melancolia urbana, a <strong>Ponto Lunar</strong> traz um som que reverbera
+                entre o rock alternativo e a atmosfera. Com riffs marcantes e letras que exploram o existencialismo
+                moderno, nossa missão é criar uma conexão visceral com quem ouve. Somos o ruído na calmaria e a luz na
+                escuridão.
+            </p>
+
+            <div class="band-specs">
+                <p><span>Local:</span> Teresina-PI</p>
+                <p><span>Estilo:</span> Metalcore / Modern / Alt</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTEGRANTES SECTION (CARROSSEL) -->
+    <section class="members scroll-animate" id="integrantes">
+        <div class="container">
+            <h2 class="section-title">Integrantes</h2>
+
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev-btn" aria-label="Anterior">&#10094;</button>
+
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <!-- 
+                            [INSTRUÇÃO PARA O USUÁRIO]
+                            Para adicionar ou trocar imagens dos integrantes:
+                            1. Adicione suas fotos na pasta do projeto
+                            2. Tente manter todas as fotos com a mesma proporção (ex: 400x500px)
+                            3. Altere o 'src' das tags <img> abaixo.
+                        -->
+
+                        <!-- Integrante 1 -->
+                        <li class="carousel-slide current-slide">
+                            <div class="member-card">
+                                <div class="member-photo-placeholder">
+                                    <img src="assets/integrante 1.jpg" alt="Caio - Vocal / Guitarra">
+                                </div>
+                                <h3 class="member-name">Caio</h3>
+                                <p class="member-role">Vocal / Guitarra</p>
+                            </div>
+                        </li>
+
+                        <!-- Integrante 2 -->
+                        <li class="carousel-slide">
+                            <div class="member-card">
+                                <div class="member-photo-placeholder">
+                                    <img src="assets/integrante 2.jpg" alt="Matheus Vitor - @matheeusvitoor">
+                                </div>
+                                <h3 class="member-name">Matheus Vitor</h3>
+                                <p class="member-role">@matheeusvitoor</p>
+                            </div>
+                        </li>
+
+                        <!-- Integrante 3 -->
+                        <li class="carousel-slide">
+                            <div class="member-card">
+                                <div class="member-photo-placeholder">
+                                    <img src="assets/integrante 3.jpg" alt="Anderson Gomes - @andersongv13">
+                                </div>
+                                <h3 class="member-name">Anderson Gomes</h3>
+                                <p class="member-role">@andersongv13</p>
+                            </div>
+                        </li>
+
+                        <!-- Integrante 4 -->
+                        <li class="carousel-slide">
+                            <div class="member-card">
+                                <div class="member-photo-placeholder">
+                                    <img src="assets/integrante 4.jpg" alt="Lucas Dourado - @lucas.ldourado">
+                                </div>
+                                <h3 class="member-name">Lucas Dourado</h3>
+                                <p class="member-role">@lucas.ldourado</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="carousel-btn next-btn" aria-label="Próximo">&#10095;</button>
+            </div>
+
+            <!-- Indicadores de navegação (bolinhas) -->
+            <div class="carousel-nav">
+                <button class="carousel-indicator current-slide"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- REDES E LINKS SECTION -->
+    <section class="socials scroll-animate" id="social">
+        <div class="container">
+            <h2 class="section-title">Siga a Ponto Lunar</h2>
+            <div class="social-grid">
+                <a href="https://www.instagram.com/pontolunarr" target="_blank" class="social-btn instagram">
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.youtube.com/@pontolunarrock" target="_blank" class="social-btn youtube">
+                    <span>YouTube</span>
+                </a>
+                <a href="https://www.letras.mus.br/ponto-lunar/" target="_blank" class="social-btn lyrics">
+                    <span>Letras</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <img src="logo.png" alt="Ponto Lunar" class="footer-logo">
+            <p>&copy; 2025 Ponto Lunar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
