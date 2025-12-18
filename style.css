@@ -559,22 +559,61 @@ section {
  */
 footer {
     background-color: #000;
-    padding: 40px 0;
+    padding: 40px 16px;
     text-align: center;
     border-top: 1px solid #1a1a1a;
 }
 
+/* Grupos */
+.footer-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Espaço entre as duas áreas */
+.footer-group+.footer-group {
+    margin-top: 24px;
+}
+
+/* Logo principal */
 .footer-logo {
     width: 100px;
-    margin: 0 auto 20px;
     opacity: 0.5;
     filter: grayscale(100%);
 }
 
+/* Logo desenvolvedor */
+.visionx-logo {
+    width: 70px;
+    opacity: 0.6;
+    filter: grayscale(100%);
+}
+
+/* Texto */
 footer p {
+    margin: 0;
     color: #666;
     font-size: 0.9rem;
 }
+
+/* Desktop */
+@media (min-width: 768px) {
+    footer {
+        padding: 32px 40px;
+    }
+
+    .footer-group {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-group+.footer-group {
+        margin-top: 12px;
+    }
+}
+
 
 /* 
  * RESPONSIVIDADE 
